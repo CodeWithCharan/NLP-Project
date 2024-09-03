@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 ### STEP 03: run streamlit app
 ```bash
-python streamlit run app.py
+streamlit run app.py
 ```
 
 ### STEP 04: After running the app, it will be available at:
