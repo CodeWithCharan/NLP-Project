@@ -49,13 +49,19 @@ if st.button("Summarize"):
                 st.subheader("Summary")
                 st.success(summary)
 
+                # Add download button for summary
+                st.download_button(label="Download Summary", 
+                                   data=summary, 
+                                   file_name="summary.txt", 
+                                   mime="text/plain")
+
         except Exception as e:
             st.error(f"An error occurred: {str(e)}")
     else:
         st.warning("Please enter some text to summarize.")
         st.markdown('<style>.stTextArea{border:2px solid red;}</style>', unsafe_allow_html=True)
 
-# Clear button
+# Clear I/O button
 if st.button("Clear"):
     st.session_state.input_text = ""
 
