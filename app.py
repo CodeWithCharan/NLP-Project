@@ -34,7 +34,7 @@ if st.button("Summarize"):
     else:
         st.warning("Please enter some text to summarize.")
 
-# Clear Output
+# Clear button
 if st.button("Clear"):
     input_text = st.empty()
 
