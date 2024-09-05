@@ -7,25 +7,17 @@ In this project, I built a text summarizer app that will summarize any text, dia
 
 ### **Project Highlights**
 What makes this project unique is the integration of **MLOps** techniques:
-- **Pipelines**: Implemented Data Ingestion, Validation, Transformation, Model Trainer, Evaluation and Prediction.
+- **Pipelines**: Implemented Data Ingestion, Data Validation, Data Transformation, Model Trainer, Model Evaluation and Prediction.
 - **Docker**: Containerized the source code for easy deployment on AWS ECR and EC2.
-- **GitHub Actions**: Set up Continuous Integration and Continuous Deployment.
-- **Streamlit App**: Developed an beautiful UI for user interaction.
+- **GitHub Actions**: Set up Continuous Integration and Continuous Deployment (CI/CD).
+- **Streamlit App**: Developed a user-friendly UI for interaction.
 
 ### **Challenges & Solutions**
-1. **Model Fine-Tuning**: Finding the right hyperparameters for the SAMSum dataset required extensive experimentation.
+1. **Model Fine-Tuning**: Finding the right hyperparameters for the SAMSum dataset required extensive experimentation, leading to a more robust summarization performance.
 2. **Deployment**: Containerizing and deploying the app on AWS was challenging, but leveraging Docker and GitHub Actions streamlined the process.
 
 ### **Results**
-- Successfully summarized a chat between me and my friend [@dheerajvoore](https://www.linkedin.com/in/dheerajvoore/) into a short and clear summary.
-- The app now processes various text inputs with impressive accuracy.
-
-### **Pegasus Model Performance**:
-
-| Model   | ROUGE-1   | ROUGE-2 | ROUGE-L | ROUGE-Lsum |
-|---------|-----------|---------|---------|------------|
-| Pegasus | 0.02161   | 0.0     | 0.02131 | 0.02125    |
-
+- The app successfully summarized a chat between my friend [@dheerajvoore](https://www.linkedin.com/in/dheerajvoore/) and me into a concise and clear summary.
 
 ## Workflows
 
@@ -149,3 +141,11 @@ Description: About the deployment
     AWS_ECR_LOGIN_URI =
 
     ECR_REPOSITORY_NAME = mlproj
+
+### **Pegasus Model Performance**:
+
+| Model   | ROUGE-1   | ROUGE-2 | ROUGE-L | ROUGE-Lsum |
+|---------|-----------|---------|---------|------------|
+| Pegasus | 0.02161   | 0.0     | 0.02131 | 0.02125    |
+
+*"Continuously working on improving the model's performance for better summarization accuracy!"*
