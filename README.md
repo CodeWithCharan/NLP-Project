@@ -1,5 +1,32 @@
 # End-to-End-Text-Summarizer-Project
 
+In this project, I built a text summarizer app that will summarize any text, dialogue, conversation or article. I utilized the Pegasus model and fine-tuned it with the SAMSum dataset.
+
+🔗 **Model**: [Pegasus](https://huggingface.co/docs/transformers/en/model_doc/pegasus)  
+🔗 **Dataset**: [SAMSum](https://huggingface.co/datasets/Samsung/samsum)
+
+### **Project Highlights**
+What makes this project unique is the integration of **MLOps** techniques:
+- **Pipelines**: Implemented Data Ingestion, Validation, Transformation, Model Trainer, Evaluation and Prediction.
+- **Docker**: Containerized the source code for easy deployment on AWS ECR and EC2.
+- **GitHub Actions**: Set up Continuous Integration and Continuous Deployment.
+- **Streamlit App**: Developed an beautiful UI for user interaction.
+
+### **Challenges & Solutions**
+1. **Model Fine-Tuning**: Finding the right hyperparameters for the SAMSum dataset required extensive experimentation.
+2. **Deployment**: Containerizing and deploying the app on AWS was challenging, but leveraging Docker and GitHub Actions streamlined the process.
+
+### **Results**
+- Successfully summarized a chat between me and my friend [@dheerajvoore](https://www.linkedin.com/in/dheerajvoore/) into a short and clear summary.
+- The app now processes various text inputs with impressive accuracy.
+
+### **Pegasus Model Performance**:
+
+| Model   | ROUGE-1   | ROUGE-2 | ROUGE-L | ROUGE-Lsum |
+|---------|-----------|---------|---------|------------|
+| Pegasus | 0.02161   | 0.0     | 0.02131 | 0.02125    |
+
+
 ## Workflows
 
 1. Update config.yaml
